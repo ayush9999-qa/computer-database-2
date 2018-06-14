@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<listeners>
+		<listener class-name="Backbase.ReportListener.ExtentReporterNG"></listener>
+	</listeners>
+	
+	<parameter name="computerName" value="testAutomationComp" />
+	<parameter name="introducedDate" value="1991-02-20" />
+	<parameter name="company" value="IBM" />
+	<parameter name="editedComputerName" value="testComputer" />
+	<parameter name="editedCompany" value="Apple" />
+	
+	<test name="Backbase Computer Database">
+	    <classes>
+	    	<class name="Backbase.ComputerDatabase.ComputerDatabaseTests" />	    	
+	    </classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
